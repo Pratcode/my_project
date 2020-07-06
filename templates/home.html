@@ -3,26 +3,33 @@
 {% block content %}
 
 <br><br><br>
-    <div class="container jumbotron">
-        <h6>hi there , this is {{ name }}</h6>
-        <h1>{{ pro }}</h1>
-        <img src="{% static 'image.jpg' %}"  width="400" height="400">
-
+    <div class="container ">
+        <div class="jumbotron">
+            <h6>hi there , this is {{ name }}</h6>
+            <h1>{{ pro }}</h1>
+            <img src="{% static 'image.jpg' %}"  width="400" height="400">
+        </div>
     </div>
     <br>
-    <div class="container jumbotron">
-        <h4>Experience -</h4><br>
-        <h6>(1){{ exp1 }}<br><br>(2){{ exp2 }}</h6>
+    <div class="container ">
+        <div class="jumbotron">
+            <h4>Experience -</h4><br>
+            <h6>(1){{ exp1 }}<br><br>(2){{ exp2 }}</h6>
+        </div>
     </div>
     <br>
-    <div class="container jumbotron">
-        <h4>Skills -</h4>
-        <h6>{{ skl }}</h6>
+    <div class="container ">
+        <div class="jumbotron">
+            <h4>Skills -</h4>
+            <h6>{{ skl }}</h6>
+        </div>
     </div>
     <br>
-    <div class="container jumbotron">
-        <h4>Achievements-</h4><br>
-        <h6>been a voluntear</h6>
-        <h6>done a hackathon</h6>
+    <div class="container ">
+        <div class="jumbotron">
+            <h4>Achievements-</h4><br>
+            <h6>been a voluntear</h6>
+            <h6>done a hackathon</h6>
+        </div>
     </div>
 {% endblock %}
