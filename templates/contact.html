@@ -16,32 +16,46 @@
         </div>
     </div>
     <div class="container" style="width: 80%">
+        {% for media in media_stuff %}
         <div class="jumbotron">
             <h1>Folllow Me -</h1><br><br>
             <!--Facebook-->
-            <button type="button " style="background-color: #3b5998 !important; color: white; margin: 5px" class="btn btn"><i class="fa fa-facebook-f "></i> Facebook</button>
+            {% if media.facebook %}
+            <button type="button " onclick='window.location = "{{ media.facebook }}"' style="background-color: #3b5998 !important; color: white; margin: 5px" class="btn btn"><i class="fa fa-facebook-f "></i> Facebook</button>{% endif %}
             <!--Twitter-->
-            <button type="button" style="background-color: #55acee !important; color: white; margin: 5px" class="btn"><i class="fa fa-twitter "></i> Twitter</button>
+            {% if media.Twitter %}
+            <button type="button" onclick='window.location = "{{ media.Twitter }}"' style="background-color: #55acee !important; color: white; margin: 5px" class="btn"><i class="fa fa-twitter "></i> Twitter</button>{% endif %}
             <!--Google +-->
-            <button type="button" style="background-color: #dd4b39 !important; color: white; margin: 5px" class="btn"><i class="fa fa-google-plus-g "></i> Google +</button>
+            {% if media.Google %}
+            <button type="button" onclick='window.location = "{{ media.Google }}"' style="background-color: #dd4b39 !important; color: white; margin: 5px" class="btn"><i class="fa fa-google-plus-g "></i> Google +</button>{% endif %}
             <!--Linkedin-->
-            <button type="button" style="background-color: #0082ca !important; color: white; margin: 5px" class="btn"><i class="fa fa-linkedin-in "></i> Linkedin</button>
+            {% if media.Linkedin %}
+            <button type="button" onclick='window.location = "{{ media.Linkedin }}"' style="background-color: #0082ca !important; color: white; margin: 5px" class="btn"><i class="fa fa-linkedin-in "></i> Linkedin</button>{% endif %}
             <!--Instagram-->
-            <button type="button" style="background-color: #2e5e86 !important; color: white; margin: 5px" class="btn"><i class="fa fa-instagram "></i> Instagram</button>
+            {% if media.Instagram %}
+            <button type="button" onclick='window.location = "{{ media.Instagram }}"' style="background-color: #2e5e86 !important; color: white; margin: 5px" class="btn"><i class="fa fa-instagram "></i> Instagram</button>{% endif %}
             <!--Pinterest-->
-            <button type="button" style="background-color: #c61118 !important; color: white; margin: 5px" class="btn"><i class="fa fa-pinterest "></i> Pinterest</button>
+            {% if media.Pinterest %}
+            <button type="button" onclick='window.location = "{{ media.Pinterest }}"' style="background-color: #c61118 !important; color: white; margin: 5px" class="btn"><i class="fa fa-pinterest "></i> Pinterest</button>{% endif %}
             <!--Stack Overflow-->
-            <button type="button" onclick='window.location = "https://stackoverflow.com"' style="background-color: #ffac44 !important; color: white; margin: 5px" class="btn"><i class="fa fa-stack-overflow "></i> Stack Overflow</button>
+            {% if media.Stack_Overflow %}
+            <button type="button" onclick='window.location = "{{ media.Stack_Overflow }}"' style="background-color: #ffac44 !important; color: white; margin: 5px" class="btn"><i class="fa fa-stack-overflow "></i> Stack Overflow</button>{% endif %}
             <!--Youtube-->
-            <button type="button" style="background-color: #ed302f !important; color: white; margin: 5px" class="btn"><i class="fa fa-youtube "></i> Youtube</button>
+            {% if media.Youtube %}
+            <button type="button" onclick='window.location = "{{ media.Youtube  }}"' style="background-color: #ed302f !important; color: white; margin: 5px" class="btn"><i class="fa fa-youtube "></i> Youtube</button>{% endif %}
             <!--Slack-->
-            <button type="button" style="background-color: #56b68b !important; color: white; margin: 5px" class="btn"><i class="fa fa-slack-hash "></i> Slack</button>
+            {% if media.Slack %}
+            <button type="button" onclick='window.location = "{{ media.Slack }}"' style="background-color: #56b68b !important; color: white; margin: 5px" class="btn"><i class="fa fa-slack-hash "></i> Slack</button>{% endif %}
             <!--Github-->
-            <button type="button" style="background-color: #333 !important; color: white; margin: 5px" class="btn"><i class="fa fa-github "></i> Github</button>
+            {% if media.Github %}
+            <button type="button" onclick='window.location = "{{ media.Github }}"' style="background-color: #333 !important; color: white; margin: 5px" class="btn"><i class="fa fa-github "></i> Github</button>{% endif %}
             <!--Email-->
-            <button type="button" style="background-color: #4b515d !important; color: white; margin: 5px" class="btn"><i class="fa fa-envelope "></i> Email</button>
+            {% if media.Email %}
+            <button type="button" onclick='window.location = "{{ media.Email }}"' style="background-color: #4b515d !important; color: white; margin: 5px" class="btn"><i class="fa fa-envelope "></i> Email</button>{% endif %}
             <!--Reddit-->
-            <button type="button" style="background-color: #ff4500 !important; color: white; margin: 5px" class="btn"><i class="fa fa-reddit-alien "></i> Reddit</button>
+            {% if media.Reddit %}
+            <button type="button" onclick='window.location = "{{ media.Reddit }}"' style="background-color: #ff4500 !important; color: white; margin: 5px" class="btn"><i class="fa fa-reddit-alien "></i> Reddit</button>{% endif %}
         </div>
+        {% endfor %}
     </div>
 {% endblock %}

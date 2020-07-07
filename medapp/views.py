@@ -9,4 +9,5 @@ def resume(request):
 
 
 def contact(request):
-    return render(request, 'contact.html')
+    media_suff = Media.objects.all()
+    return render(request, 'contact.html', {'media_stuff': media_suff})
