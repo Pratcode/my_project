@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Media, Contact
+from django.contrib import messages
 
 
 # Create your views here.
@@ -22,4 +23,5 @@ def msg(request):
         message = request.POST['message']
         msg_save = Contact(contact_name=name, contact_email=email, contact_body=message)
         msg_save.save()
+        messages.info(request, 'Message has been sent')
         return redirect('contact')
