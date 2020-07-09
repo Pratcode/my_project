@@ -27,7 +27,7 @@
     {% endblock %}
     <div class="card-footer text-light bg-dark" >
         <footer>
-            <p class="copyright " >Company Name © 2020</p>
+            <p class="copyright " >{% for media in media_suff %}{{ media.media_name }}{% endfor %} © <script>document.write(new Date().getFullYear())</script></p>
         </footer>
     </div>
 </body>

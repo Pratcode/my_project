@@ -6,9 +6,9 @@
     {% for media in media_suff %}
     <div class="container ">
         <div class="jumbotron">
-            <h6>hi there , this is {{ media.media_name }}</h6>
-            <h1>{{ media.media_pro }}</h1>
-            <h6>{{ media.media_body }}</h6>
+            <h6>Hi there, this is <h3>{{ media.media_name }},</h3></h6>
+            <h1>A {{ media.media_pro }}</h1>
+            <h6>➲ {{ media.media_body }}</h6>
             <img src="static{{ media.media_img.url }}" style="float: right; margin: 10px" width=300px; height=300px>
         </div>
     </div>
@@ -18,10 +18,10 @@
     <div class="container ">
         <div class="jumbotron">
             <h4>{{ card.data_title }}</h4><br>
-            <h6>{{ card.data_body1 }}</h6><br>
-            <h6>{{ card.data_body2 }}</h6><br>
-            <h6>{{ card.data_body3 }}</h6><br>
-            <h6>{{ card.data_body4 }}</h6><br>
+            <h6>➲ {{ card.data_body1 }}</h6><br>
+            <h6>➲ {{ card.data_body2 }}</h6><br>
+            <h6>➲ {{ card.data_body3 }}</h6><br>
+            <h6>➲ {{ card.data_body4 }}</h6><br>
         </div>
     </div>
     {% endfor %}
