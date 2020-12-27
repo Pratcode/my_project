@@ -14,6 +14,8 @@ every data which is represented is comming from database.
 - ones deployed we dont need to edit things manually, all things can be updated from
    admin panel.
 
+![alt text](img/UI.gif) 
+
 ### How to use
 
 Install python in the machine and set environment path, either by ticking on installer or setting up manually.
@@ -112,6 +114,7 @@ because database is owned by u.
 where u can put your all content, by putting title.
 Every discription will be shown in bullet points.
 
+![alt text](img/admin.gif) 
 
 ### Note----
 
