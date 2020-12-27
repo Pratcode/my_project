@@ -13,7 +13,7 @@
     <script src="{% static 'js/jquery.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <nav class="navbar navbar-dark bg-dark navbar-expand-md">
-        <div class="container-fluid"><a class="navbar-brand" href="#">{% for media in media_suff %}{{ media.media_name }}{% endfor %}</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container-fluid"><a class="navbar-brand" href="#">{% for Person in Person_Details %}{{ Person.Person_name }}{% endfor %}</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'home' %}">Home</a></li>
@@ -27,7 +27,7 @@
     {% endblock %}
     <div class="card-footer text-light bg-dark" >
         <footer>
-            <p class="copyright " >{% for media in media_suff %}{{ media.media_name }}{% endfor %} © <script>document.write(new Date().getFullYear())</script></p>
+            <p class="copyright " >{% for Person in Person_Details %}{{ Person.Person_name }}{% endfor %} © <script>document.write(new Date().getFullYear())</script></p>
         </footer>
     </div>
 </body>
