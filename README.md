@@ -81,8 +81,6 @@ and to start server-
 > python manange.py run server
 ```
 
-**---finally WebResume is running.---**
-
 ###### To start filling details and accessing admin panel -
 
 create super user - 
@@ -91,9 +89,9 @@ create super user -
 ```
 and create your admin account.
 
-Now type `/admin` in url after url of local host and access login panel
+- Now type `/admin` in url after url of local host and access login panel
 where u can type ur login credentials. finally u have access to admin panal. </br>
-To start seeing everything filled in WebResume u have to put data,
+- To start seeing everything filled in WebResume u have to put data,
 because database is owned by u.  
 
 
@@ -126,4 +124,4 @@ set-ExecutionPolicy Unrestricted
 and then run powershell in normal mode as you were using before.
 
 
-**--- Now finally details are on WebResume ---**
+**--- Now finally your details are on WebResume ---**
