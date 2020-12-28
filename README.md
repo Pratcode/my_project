@@ -85,6 +85,7 @@ and to start server-
 ```bash
 > python manange.py run server
 ```
+**---finally WebResume is running.---**
 
 ###### To start filling details and accessing admin panel -
 
